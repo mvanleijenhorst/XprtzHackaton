@@ -13,6 +13,7 @@ public partial class Index
 
     public void SelectLiveEvent(Guid id)
     {
-        NavigationManager.NavigateTo($"{PageConstants.Reservation}/{id}", true);
+        var bookingId = Guid.NewGuid();
+        NavigationManager.NavigateTo($"{PageConstants.Reservation}/{id}/{bookingId}", true);
     }
 }

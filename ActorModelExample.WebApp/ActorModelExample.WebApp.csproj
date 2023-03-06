@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ActorModelExample.AkkaNet\ActorModelExample.AkkaNet.csproj" />
     <ProjectReference Include="..\ActorModelExample.Domain\ActorModelExample.Domain.csproj" />
     <ProjectReference Include="..\ActorModelExample.DummyImpl\ActorModelExample.DummyImpl.csproj" />
   </ItemGroup>
