@@ -9,6 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActorModelExample.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActorModelExample.DummyImpl", "ActorModelExample.DummyImpl\ActorModelExample.DummyImpl.csproj", "{DEB83D07-1840-4434-92A3-6C17C412AFE4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActorModelExample.Orleans", "ActorModelExample.Orleans\ActorModelExample.Orleans.csproj", "{DECAF3E1-D4C5-40F8-AE70-1B378702A5BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActorModelExample.Orleans.Abstractions", "ActorModelExample.Orleans.Abstractions\ActorModelExample.Orleans.Abstractions.csproj", "{F955766E-900D-4CCC-88E0-7F73ABBD0653}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActorModelExample.Orleans.Grains", "ActorModelExample.Orleans.Grains\ActorModelExample.Orleans.Grains.csproj", "{0FA70CE5-DCF5-40B1-8C1D-09830C2A2A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorModelExample.Orleans.Server", "ActorModelExample.Orleans.Server\ActorModelExample.Orleans.Server.csproj", "{6C4D374D-FBEC-4ED0-9DE4-DBDCECAE775F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,22 @@ Global
 		{DEB83D07-1840-4434-92A3-6C17C412AFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB83D07-1840-4434-92A3-6C17C412AFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEB83D07-1840-4434-92A3-6C17C412AFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECAF3E1-D4C5-40F8-AE70-1B378702A5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECAF3E1-D4C5-40F8-AE70-1B378702A5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECAF3E1-D4C5-40F8-AE70-1B378702A5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECAF3E1-D4C5-40F8-AE70-1B378702A5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F955766E-900D-4CCC-88E0-7F73ABBD0653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F955766E-900D-4CCC-88E0-7F73ABBD0653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F955766E-900D-4CCC-88E0-7F73ABBD0653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F955766E-900D-4CCC-88E0-7F73ABBD0653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA70CE5-DCF5-40B1-8C1D-09830C2A2A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA70CE5-DCF5-40B1-8C1D-09830C2A2A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA70CE5-DCF5-40B1-8C1D-09830C2A2A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA70CE5-DCF5-40B1-8C1D-09830C2A2A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D374D-FBEC-4ED0-9DE4-DBDCECAE775F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D374D-FBEC-4ED0-9DE4-DBDCECAE775F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D374D-FBEC-4ED0-9DE4-DBDCECAE775F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D374D-FBEC-4ED0-9DE4-DBDCECAE775F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

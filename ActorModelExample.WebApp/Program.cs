@@ -1,14 +1,14 @@
-using ActorModelExample.DummyImpl.Hosting;
 using ActorModelExample.WebApp.Util;
+using ActorModelExample.Orleans.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var venue = DataGenerator.GenerateVenue();
-builder.Services.AddDummy(venue);
+builder.Services.AddSingleton(venue);
+builder.AddOrleans();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton(venue);
 
 
 var app = builder.Build();
