@@ -40,13 +40,13 @@ public class VenueService : IVenueService
         return Task.CompletedTask;
     }
 
-    public Task<Dictionary<SeatStatus, List<int>>> GetSeatInfoAsync(LiveEvent liveEvent)
+    public Task<Dictionary<SeatStatus, List<int>>> GetSeatInfoAsync(LiveEvent liveEvent, Guid bookingId)
     {
         var eventSeatReservation = _repository[liveEvent];
         return Task.FromResult(eventSeatReservation);
     }
 
-    public Task ReserveSeatAsync(LiveEvent liveEvent, int seatNumber)
+    public Task ReserveSeatAsync(LiveEvent liveEvent, Guid bookingId, int seatNumber)
     {
         var eventSeatReservation = _repository[liveEvent];
         var freeSeats = eventSeatReservation[SeatStatus.Available];
@@ -58,7 +58,7 @@ public class VenueService : IVenueService
         return Task.CompletedTask;
     }
 
-    public Task CancelSeatReservationAsync(LiveEvent liveEvent, int seatNumber)
+    public Task CancelSeatReservationAsync(LiveEvent liveEvent, Guid bookingId, int seatNumber)
     {
         var eventSeatReservation = _repository[liveEvent];
         var freeSeats = eventSeatReservation[SeatStatus.Available];
@@ -70,7 +70,7 @@ public class VenueService : IVenueService
         return Task.CompletedTask;
     }
 
-    public Task ConfirmBookingAsync(LiveEvent liveEvent, string name, IEnumerable<int> confirmedSeats)
+    public Task ConfirmBookingAsync(LiveEvent liveEvent, Guid bookingId, string name, IEnumerable<int> confirmedSeats)
     {
         var eventSeatReservation = _repository[liveEvent];
         var selectedSeats = eventSeatReservation[SeatStatus.Reserved];

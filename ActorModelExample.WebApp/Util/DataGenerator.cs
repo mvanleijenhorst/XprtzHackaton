@@ -1,5 +1,5 @@
-﻿using ActorModelExample.Domain.Models;
-using ActorModelExample.WebApp.Common;
+﻿using ActorModelExample.Domain.Common;
+using ActorModelExample.Domain.Models;
 using Bogus;
 
 namespace ActorModelExample.WebApp.Util;

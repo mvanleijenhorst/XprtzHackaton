@@ -5,9 +5,9 @@ namespace ActorModelExample.Domain.Services;
 public interface IVenueService
 {
     Task RegisterVenueAsync(Venue venue);
-    Task<Dictionary<SeatStatus, List<int>>> GetSeatInfoAsync(LiveEvent liveEvent);
+    Task<Dictionary<SeatStatus, List<int>>> GetSeatInfoAsync(LiveEvent liveEvent, Guid bookingId);
 
-    Task ReserveSeatAsync(LiveEvent liveEvent, int seatNumber);
-    Task CancelSeatReservationAsync(LiveEvent liveEvent, int seatNumber);
-    Task ConfirmBookingAsync(LiveEvent liveEvent, string name, IEnumerable<int> confirmedSeats);
+    Task ReserveSeatAsync(LiveEvent liveEvent, Guid bookingId, int seatNumber);
+    Task CancelSeatReservationAsync(LiveEvent liveEvent, Guid bookingId, int seatNumber);
+    Task ConfirmBookingAsync(LiveEvent liveEvent, Guid bookingId, string name, IEnumerable<int> confirmedSeats);
 }
